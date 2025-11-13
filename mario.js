@@ -391,7 +391,7 @@ function render(){
   } else{ const g=ctx.createLinearGradient(0,0,0,H); g.addColorStop(0,'#102a43'); g.addColorStop(1,'#021028'); ctx.fillStyle=g; ctx.fillRect(0,0,W,H);}
   ctx.restore();
 
-  for(const p of gameState.platforms){
+  for(const p of gameState.platforms) {
     ctx.save(); ctx.fillStyle='rgba(0,0,0,0.35)'; ctx.fillRect(p.x,p.y+8,p.w,p.h); ctx.restore();
     ctx.fillStyle='rgba(255,255,255,0.04)'; ctx.fillRect(p.x,p.y,p.w,p.h); ctx.strokeStyle='rgba(255,255,255,0.03)'; ctx.strokeRect(p.x,p.y,p.w,p.h);
   }
