@@ -1,0 +1,50 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  background: #000;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+}
+
+canvas {
+  display: block;
+  background: #000;
+}
+
+/* === OVERLAY DE INICIO === */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: opacity 0.4s ease;
+}
+
+.overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.overlay-content {
+  text-align: center;
+  background: rgba(30,30,30,0.9);
+  border: 2px solid rgba(255,255,255,0.2);
+  padding: 24px 40px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.overlay-content h1 {
+  margin-bottom: 12px;
+  font-size: 2.4rem;
+  color: #ffcc66;
+}
+
+.overlay-content p {
+  ma
