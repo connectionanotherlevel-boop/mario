@@ -392,7 +392,7 @@ function render(){
   ctx.restore();
 
   for(const p of gameState.platforms) {
-    ctx.save(); ctx.fillStyle='rgba(0,0,0,0.45)'; ctx.fillRect(p.x,p.y+8,p.w,p.h); ctx.restore();
+    ctx.save(); ctx.fillStyle='rgba(0,0,0,0.35)'; ctx.fillRect(p.x,p.y+8,p.w,p.h); ctx.restore();
     ctx.fillStyle='rgba(255,255,255,0.04)'; ctx.fillRect(p.x,p.y,p.w,p.h); ctx.strokeStyle='rgba(255,255,255,0.03)'; ctx.strokeRect(p.x,p.y,p.w,p.h);
   }
 
